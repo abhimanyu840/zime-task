@@ -193,12 +193,14 @@ const Home = (): React.JSX.Element => {
                     </span>
                 </div>
                 <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row">
-                    <div ref={filterRef} className="mb-6 lg:w-1/5 sm:px-1 md:px-2 px-4 mx-auto border-gray-400  border h-fit py-4 rounded-md">
+                    <div ref={filterRef} className="mb-6 lg:w-1/5 sm:px-1 md:px-2 px-4 mx-auto border-gray-400  border h-fit py-4 rounded-md hidden lg:block">
                         <div className='font-semibold'>Filter by Tags:</div>
                         {renderTagsCheckbox()}
                     </div>
                     <div className="px-2 lg:w-4/5 overflow-x-scroll">
-                        <Table dataSource={filteredData} columns={columns} bordered loading={isLoading} pagination={false} />
+                        <div className="w-full overflow-x-auto">
+                            <Table dataSource={filteredData} columns={columns} bordered loading={isLoading} pagination={false} />
+                        </div>
                     </div>
                 </div>
                 <div className="p-2 my-6 item-center justify-center flex">

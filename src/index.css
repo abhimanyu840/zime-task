@@ -4,11 +4,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (max-width: 768px) {
-    .ant-table-wrapper {
-        overflow-x: auto;
-    }
-}
-.ant-table-wrapper {
-    overflow-x: auto;
-}
+
