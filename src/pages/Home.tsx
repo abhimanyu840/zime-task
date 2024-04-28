@@ -198,7 +198,6 @@ const Home = (): React.JSX.Element => {
                         {renderTagsCheckbox()}
                     </div>
                     <div className="px-2 lg:w-4/5 overflow-x-scroll">
-                        {/* <Table dataSource={data} columns={columns} bordered loading={isLoading} pagination={false} /> */}
                         <Table dataSource={filteredData} columns={columns} bordered loading={isLoading} pagination={false} />
                     </div>
                 </div>
