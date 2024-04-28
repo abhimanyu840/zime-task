@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Checkbox, Pagination, Table, Tag, Input } from "antd";
-import type { CheckboxProps, PaginationProps, TableProps } from 'antd';
+import type { PaginationProps, TableProps } from 'antd';
 import { toast } from 'react-toastify';
-import { useLocation, useNavigate, useRoutes } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { FaFilter } from "react-icons/fa";
 
 interface DataType {
